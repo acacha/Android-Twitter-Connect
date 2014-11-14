@@ -1,4 +1,4 @@
-package com.androidhive.twitterconnect;
+package com.iesebre.dam2.pa201415.sergi.androidTwitterConnect;
 
 import twitter4j.Twitter;
 import twitter4j.TwitterException;
@@ -24,6 +24,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.iesebre.dam2.pa201415.sergi.androidTwitterConnect.R;
+
+
 
 public class MainActivity extends Activity {
 	// Constants
@@ -31,8 +34,8 @@ public class MainActivity extends Activity {
 	 * Register your here app https://dev.twitter.com/apps/new and get your
 	 * consumer key and secret
 	 * */
-	static String TWITTER_CONSUMER_KEY = ""; // place your cosumer key here
-	static String TWITTER_CONSUMER_SECRET = ""; // place your consumer secret here
+	static String TWITTER_CONSUMER_KEY = "31mkQ0ZnhhekaPnztlInuD9s2"; // place your cosumer key here
+	static String TWITTER_CONSUMER_SECRET = "MwJGQVbyM90DZYHIRpFMKUgtKoJRCjEAIPC9GB0OOYIWg3dtrR"; // place your consumer secret here
 
 	// Preference Constants
 	static String PREFERENCE_NAME = "twitter_oauth";
@@ -74,6 +77,17 @@ public class MainActivity extends Activity {
 	
 	// Alert Dialog Manager
 	AlertDialogManager alert = new AlertDialogManager();
+	
+	private class LoginToTwitter extends AsyncTask<Void, Void, Void> {
+
+		@Override
+		protected Void doInBackground(Void... params) {
+			// TODO Auto-generated method stub
+			loginToTwitter();
+			return null;
+		} 
+	}
+
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -120,7 +134,7 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				// Call login twitter function
-				loginToTwitter();
+				new LoginToTwitter().execute();
 			}
 		});
 

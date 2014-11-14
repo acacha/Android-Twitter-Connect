@@ -1,4 +1,4 @@
-package com.androidhive.twitterconnect;
+package com.iesebre.dam2.pa201415.sergi.androidTwitterConnect;
 
 import android.content.Context;
 import android.net.ConnectivityManager;

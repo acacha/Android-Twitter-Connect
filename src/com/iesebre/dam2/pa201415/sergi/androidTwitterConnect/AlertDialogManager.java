@@ -1,8 +1,9 @@
-package com.androidhive.twitterconnect;
+package com.iesebre.dam2.pa201415.sergi.androidTwitterConnect;
 
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import com.iesebre.dam2.pa201415.sergi.androidTwitterConnect.R;
 
 public class AlertDialogManager {
 	/**
