@@ -44,7 +44,7 @@ public class MainActivity extends Activity {
 	static final String PREF_KEY_OAUTH_SECRET = "oauth_token_secret";
 	static final String PREF_KEY_TWITTER_LOGIN = "isTwitterLogedIn";
 
-	static final String TWITTER_CALLBACK_URL = "oauth://t4jsample";
+	static final String TWITTER_CALLBACK_URL = "oauth://com.iesebre.dam2.pa201415.sergi.androidTwitterConnect";
 
 	// Twitter oauth urls
 	static final String URL_TWITTER_AUTH = "auth_url";

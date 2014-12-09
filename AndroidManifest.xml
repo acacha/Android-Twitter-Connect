@@ -23,7 +23,7 @@
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="oauth" android:host="t4jsample"/>
+                <data android:scheme="oauth" android:host="com.iesebre.dam2.pa201415.sergi.androidTwitterConnect"/>
             </intent-filter>
         </activity>
     </application>
